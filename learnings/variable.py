@@ -24,3 +24,39 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
+
+
+res = "the python is awesome"
+print(res)
+
+x = "python "
+y = "is "
+z = "easy"
+print(x + y + z)
+
+##Global Variables
+x = "awesome"
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+
+myfunc()
+print("Python is " + x)
+
+
+##The global Keyword
+#Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+
+#To create a global variable inside a function, you can use the global keyword.
+x = "awesome"
+def myFunc():
+    global x
+    x = "fanastaic"
+
+    
+myFunc()
+
+print("Python is " + x)
+
+
+
